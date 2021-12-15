@@ -24,6 +24,10 @@ public class CeilingFan {
         }
         return new CeilingFan(fanSpeed);
     }
+    
+    public static CeilingFan newCeilingFan() {
+        return new CeilingFan(FanSpeed.SPEED_3);
+    }
 
     private CeilingFan(FanSpeed fanSpeed) {
         this.fanSpeed = fanSpeed;
